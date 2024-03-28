@@ -1,0 +1,27 @@
+[package]
+name = "ultimate_rust_foundations"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.81"
+axum = { version = "0.7.4", features = ["multipart"] }
+dotenv = "0.15.0"
+futures = "0.3.30"
+image = "0.25.0"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+sqlx = { version = "0.7.4", features = ["runtime-tokio-native-tls", "sqlite"] }
+tokio = { version = "1.36.0", features = ["full"] }
+tokio-util = { version = "0.7.10", features = ["io"] }
+
+[workspace]
+members = ["affinity", "async_mutex", "atomic",
+    "authentication", "blocking", "channels1", "channels2", "cycles", "dashing", "db", "deadlocks", "divide_work", "dropping", "errors", "fileio", "foot_gun", "generics", "hello", "hello_async", "hello_tokyo", "hello_world", "iterators", "login", "login_manager", "logspan", "mutexes", "parking", "pinning", "rayon_iters", "rayon_scopes", "refc", "refcell", "restclient", "rwlocks", "scoped_threads", "server", "shared_data", "tcpserver", "thread_builder", "thread_pool", "thumbnail_server", "tokio_select", "tokio_testing", "tprio", "traits", "variables", "web_service", "workers",
+]
+
+[lints.clippy]
+needless_return = "allow"
+unused_variables = "allow"
