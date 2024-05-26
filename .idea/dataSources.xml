@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="images" uuid="f5df6e57-180b-4ac1-811a-580837223686">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>825946dd-9b41-4b4f-b3e3-423c76607aab</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:E:\go\ultimate_rust_foundations\thumbnail_server\images.db</jdbc-url>

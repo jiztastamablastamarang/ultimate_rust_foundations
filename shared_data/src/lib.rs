@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
 use std::time::{SystemTime, UNIX_EPOCH};
+use bincode::serialize;
 
 pub const DATA_COLLECTOR_ADDRESS: &str = "127.0.0.1:9004";
 const MAGIC_NUMBER: u16 = 1234;
@@ -37,7 +38,7 @@ pub enum TaskType {
 }
 
 pub fn encode_v1(command: &CollectorCommandV1) -> Vec<u8> {
-    let payload_bytes = bincode::serialize(command).unwrap();
+    let payload_bytes = serialize(command).unwrap();
     //let json = serde_json::to_string(&command).unwrap();
     //let json_bytes = json.as_bytes();
     let crc = crc32fast::hash(&payload_bytes);
@@ -83,7 +84,7 @@ pub fn decode_v1(bytes: &[u8]) -> (u32, CollectorCommandV1) {
 }
 
 pub fn encode_response_v1(command: CollectorResponseV1) -> Vec<u8> {
-    bincode::serialize(&command).unwrap()
+    serialize(&command).unwrap()
 }
 
 pub fn decode_response_v1(bytes: &[u8]) -> CollectorResponseV1 {
