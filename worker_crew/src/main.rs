@@ -1,3 +1,4 @@
+///https://www.hackingwithrust.net/2024/04/01/rustling-up-fun-a-simple-dive-into-thread-pool-patterns-with-rust/
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::thread::JoinHandle;
@@ -37,7 +38,8 @@ impl ThreadPool {
     fn join(self) {
         for worker in self.workers {
             worker.join().unwrap();
-        }}
+        }
+    }
 }
 
 struct WebRequest {

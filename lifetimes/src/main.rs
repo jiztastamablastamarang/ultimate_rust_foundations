@@ -1,6 +1,5 @@
 fn main() {}
 
-
 fn no_conflict_example_2() {
     let mut x = Box::new(42);
     let mut z = &x; // 'a
@@ -22,4 +21,13 @@ fn no_conflict_example_1() {
     } else {
         println!("{r}"); // 'a
     }
+}
+
+use std::fmt::Display;
+fn the_longest_announcement<'a, T>(x: &'a str, y: &'a str, ann: T) -> &'a str
+where
+    T: Display,
+{
+    println!("ann: {ann}");
+    return if x.len() > y.len() { x } else { y };
 }

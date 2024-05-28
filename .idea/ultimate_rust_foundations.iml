@@ -61,6 +61,8 @@
       <sourceFolder url="file://$MODULE_DIR$/cfg/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/pool/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/worker_crew/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/assosicated_types/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/phantom_type/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/asyc_blocking/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/asyc_blocking/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/asyc_blocking/src" isTestSource="false" />

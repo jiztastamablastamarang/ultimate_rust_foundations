@@ -20,8 +20,8 @@ tokio-util = { version = "0.7.10", features = ["io"] }
 visibility = "0.1.0"
 
 [workspace]
-members = ["affinity", "asyc_blocking", "async_mutex", "atomic",
-    "authentication", "blocking", "cfg", "channels1", "channels2", "clo", "cycles", "dashing", "db", "deadlocks", "display", "divide_work", "dropping", "errors", "fibo", "fileio", "fmtp", "foot_gun", "from_into", "generics", "guess_game", "hello", "hello_async", "hello_tokyo", "hello_world", "if_let", "iter", "iterators", "lifetimes", "login", "login_manager", "logspan", "matches", "memory", "mutexes", "parking", "pinning", "pool", "primitives", "rayon_iters", "rayon_scopes", "refc", "refcell", "restclient", "rwlocks", "sandbox", "scoped_threads", "server", "shared_data", "structs", "tcpserver", "thread_builder", "thread_pool", "thumbnail_server", "tokio_select", "tokio_testing", "tprio", "trains", "traits", "variables", "web_service", "while_let", "worker_crew", "workers",
+members = ["affinity", "assosicated_types", "asyc_blocking", "async_mutex", "atomic",
+    "authentication", "blocking", "cfg", "channels1", "channels2", "clo", "cycles", "dashing", "db", "deadlocks", "display", "divide_work", "dropping", "errors", "fibo", "fileio", "fmtp", "foot_gun", "from_into", "generics", "guess_game", "hello", "hello_async", "hello_tokyo", "hello_world", "if_let", "iter", "iterators", "lifetimes", "login", "login_manager", "logspan", "matches", "memory", "mutexes", "parking", "phantom_type", "pinning", "pool", "primitives", "rayon_iters", "rayon_scopes", "refc", "refcell", "restclient", "rwlocks", "sandbox", "scoped_threads", "server", "shared_data", "structs", "tcpserver", "thread_builder", "thread_pool", "thumbnail_server", "tokio_select", "tokio_testing", "tprio", "trains", "traits", "variables", "web_service", "while_let", "worker_crew", "workers",
 ]
 
 [lints.clippy]
